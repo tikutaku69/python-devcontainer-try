@@ -1,15 +1,22 @@
 {
-	"name": "python-devcontainer", // コンテナの名前
+	"name": "Existing Docker Compose (Extend)",
 	"dockerComposeFile": [
+		"../docker-compose.yml",
 		"docker-compose.yml"
 	],
 	"service": "python",
-	"workspaceFolder": "/workspaces/workspace",
+	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
     "customizations": {
         "vscode": {
-            "extensions": [ // 自動でインストールされるVS Codeの拡張機能
+            "extensions": [
                 // Docker
                 "ms-azuretools.vscode-docker",
+                // Python
+                "ms-python.python",
+                "ms-python.vscode-pylance",
+                "charliermarsh.ruff",
+                "KevinRose.vsc-python-indent",
+                "njpwerner.autodocstring",
                 // Github copilot
                 "GitHub.copilot",
                 "GitHub.copilot-chat"

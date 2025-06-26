@@ -1,7 +1,8 @@
 version: '3.8'
 services:
   python:
-    build: .
+    image: python:3.12
     volumes:
-      - ..:/workspaces:cached
+      - ..:/workspaces/workspace
     command: sleep infinity
+    working_dir: /workspaces/workspace

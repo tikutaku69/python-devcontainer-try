@@ -2,6 +2,6 @@ services:
    python:
      image: python:3.10
      volumes:
-       - .:/src
-     working_dir: /src
+       - .:/workspaces/python-devcontainer-try
+     working_dir: /workspaces/python-devcontainer-try
      command: bash -c "pip install -r requirements.txt && sleep infinity"

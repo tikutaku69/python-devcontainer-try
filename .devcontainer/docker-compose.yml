@@ -1,7 +1,8 @@
 version: '3.8'
 services:
   python:
+    image: python:3.12
     volumes:
-      - ..:/workspaces:cached
+      - ..:/workspaces/python-devcontainer-try
     command: sleep infinity
- 
+    working_dir: /workspaces/python-devcontainer-try

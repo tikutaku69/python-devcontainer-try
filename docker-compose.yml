@@ -1,6 +1,0 @@
-services:
-   python:
-     image: python:3.12
-     volumes:
-       - .:/workspaces/python-devcontainer-try
-     working_dir: /workspaces/python-devcontainer-try

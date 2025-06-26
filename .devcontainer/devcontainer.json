@@ -1,0 +1,19 @@
+{
+	"name": "python-devcontainer", // コンテナの名前
+	"dockerComposeFile": [
+		"docker-compose.yml"
+	],
+	"service": "python",
+	"workspaceFolder": "/workspaces/workspace",
+    "customizations": {
+        "vscode": {
+            "extensions": [ // 自動でインストールされるVS Codeの拡張機能
+                // Docker
+                "ms-azuretools.vscode-docker",
+                // Github copilot
+                "GitHub.copilot",
+                "GitHub.copilot-chat"
+            ]
+        }
+    }
+}
